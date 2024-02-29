@@ -23,7 +23,7 @@ function transformarEnEditable(nodo) {
 
     nodoTr.innerHTML = nuevoCodigoHtml;
     nodoContenedorForm.innerHTML = 'Pulse Aceptar para guardar los cambios o cancelar para anularlos' +
-      '<form name="formulario" action="http://aprenderaprogramar.com" method="get" onsubmit="capturarEnvio(event)" onreset="anular()">' +
+      '<form name="formulario" method="get" onsubmit="capturarEnvio(event)" onreset="anular()">' +
       '<input class="boton" type="submit" value="Aceptar"> <input class="boton" type="reset" value="Cancelar">';// a editar
 
     editando = true;
