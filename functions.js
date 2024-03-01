@@ -22,10 +22,8 @@ function transformarEnEditable(nodo) {
       '<td>En edición</td>';
 
     nodoTr.innerHTML = nuevoCodigoHtml;
-    nodoContenedorForm.innerHTML = 'Pulse Aceptar para guardar los cambios o cancelar para anularlos' +
-      '<form name="formulario" method="get" onsubmit="capturarEnvio(event)" onreset="anular()">' +
-      '<input class="boton" type="submit" value="Aceptar"> <input class="boton" type="reset" value="Cancelar">';// a editar
-
+    nodoContenedorForm.innerHTML = `Pulse Aceptar para guardar los cambios o cancelar para anularlos<form name="formulario" method="get" onsubmit="capturarEnvio(event)" onreset="anular()"><input class="boton" type="submit" value="Aceptar"> <input class="boton" type="reset" value="Cancelar">`;// a editar
+//uso de metodo sting
     editando = true;
   } else {
     alert("Solo se puede editar una línea. Recargue la página para poder editar otra");
